@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>المحتوى - أكنان</title>
+    <meta name="description" content="اكتشف مجموعة متنوعة من المحتوى التعليمي والروحي - أكنان" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <div class="loader-container">
+            <div class="spinner"></div>
+        </div>
+
+    <div class="background-sphere sphere-1"></div>
+    <div class="background-sphere sphere-2"></div>
+    <div class="background-sphere sphere-3"></div>
+    <div class="background-sphere sphere-4"></div>
+
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <img src="assets/aknan_icon only.png" alt="Aknan Logo" />
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+                <li><a href="#" onclick="showPage('content')">المحتوى</a></li>
+                <li><a href="#" onclick="showPage('join')">انضم إلينا</a></li>
+                <li><a href="#" onclick="showPage('contact')">تواصل معنا</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="intro-section">
+                    <h2 class="section-title"> المحتوى </h2>
+                    <div class="content-wrapper">
+                        <div class="intro-image">
+                            <img src="Content pics/PRO2.jpg" alt="Content Intro" />
+                        </div>
+                        <div class="intro-text-wrapper">
+                            <p> في عالم يموج بالتحديات وتتصاعد فيه الضغوط، وُلدت فكرة أكنان لتكون مساحة أمان ودفء واحتواء. انطلقت رحلتنا من إيمان عميق بأن الشباب يحتاجون إلى بيئة تُنير الطريق، وتُعيد للروح توازنها، وللفكر صفاءه. منذ اللحظة الأولى، حملنا على عاتقنا مهمة بناء منصة تجمع بين الوعي والإلهام، وتربط بين القلوب والعقول بأسلوب قريب، واقعي، وهادف. ولأن التأثير الإيجابي لا يكتمل إلا بإيجاد من يحمل الرسالة، جعلنا من أولوياتنا صناعة صُنّاع محتوى مؤثرين في الشباب، نمنحهم الأدوات والمعرفة والرؤية التي تمكّنهم من الإلهام والتغيير في مجتمعاتهم. </p>
+                        </div>
+                    </div>
+                </div>
+                   
+                <h2 class="section-title" style="margin-top: 5rem;">أبرز المشاريع</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">اكتشف أهم مشاريعنا وإنجازاتنا</p>
+
+                <!-- Slider -->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <!-- Card 1 -->
+                        <div class="slider-card">
+                            <div class="card-image">
+                                <img src="https://i.ytimg.com/vi/Dnv6mW9pkuw/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBbkmxG7GDcGtIsk0IJ-nKMzSj3WQ" alt="New Series">
+                            </div>
+                            <div class="card-content">
+                                <h3>برنامج الخطيب  </h3>
+                                <p>سلسلة فيديوهات تناقش قضايا الشباب     ...</p>
+                                <div class="card-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">1.2M+</span>
+                                        <span class="stat-label">مشاهدة</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">25K+</span>
+                                        <span class="stat-label">تفاعل</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">1.5K+</span>
+                                        <span class="stat-label">انطباع</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=d0zMPM-GC_E&list=PLa_UKIzFWDlofjAnBqtkc3XQrhiGtUQL0" target="_blank" class="card-link">شاهد السلسله</a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="slider-card">
+                            <div class="card-image">
+                                <img src="https://i.ytimg.com/vi/Ra93H5hlCy0/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AG2CIACgA-KAgwIABABGGUgUChJMA8=&rs=AOn4CLCKP9ZrJYqQ0YQtIKDZxcak7zKVpg" alt="Aknan Podcast">
+                            </div>
+                            <div class="card-content">
+                                <h3>برنامج تاء مربوطه</h3>
+                                <p>برنامج يخاطب الشابات</p>
+                                <div class="card-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">500K+</span>
+                                        <span class="stat-label">استماع</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">10K+</span>
+                                        <span class="stat-label">مشاركة</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">30+</span>
+                                        <span class="stat-label">حلقة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://youtu.be/QA0XI0Q1Pn8?si=R7PFc36Cm6ZTgyzF" target="_blank" class="card-link"> شاهد السلسله</a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="slider-card">
+                            <div class="card-image">
+                                <img src="assets/aknan youtube 1.webp" alt="Q&A Section">
+                            </div>
+                            <div class="card-content">
+                                <h3>سؤال وجواب</h3>
+                                <p>فقرة أسبوعية للإجابة على أكثر الأسئلة شيوعاً بين الشباب...</p>
+                                <div class="card-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">200+</span>
+                                        <span class="stat-label">سؤال</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">95%</span>
+                                        <span class="stat-label">رضا</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">50+</span>
+                                        <span class="stat-label">إجابة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://youtu.be/QA0XI0Q1Pn8?si=R7PFc36Cm6ZTgyzF" target="_blank" class="card-link">شاهد الأجوبة</a>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="slider-card">
+                            <div class="card-image">
+                                <img src="assets/aknan youtube 1.webp" alt="سلسلة جديدة">
+                            </div>
+                            <div class="card-content">
+                                <h3>سلسلة جديدة</h3>
+                                <p>محتوى جديد للشباب.</p>
+                                <div class="card-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">300K+</span>
+                                        <span class="stat-label">مشاهدة</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">15K+</span>
+                                        <span class="stat-label">تفاعل</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">20+</span>
+                                        <span class="stat-label">حلقة</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://youtu.be/QA0XI0Q1Pn8?si=R7PFc36Cm6ZTgyzF" target="_blank" class="card-link">شاهد الآن</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider Navigation -->
+                    <div class="slider-nav">
+                        <button class="prev-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="next-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-column">
+                <h4>أكنان</h4>
+                <p>مساحتك للهدوء والتأمل والتغيير. منصة تقدم التعاليم الإسلامية بطريقة متوازنة وعصرية للشباب.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61577148073445" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aknanchannel/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCfK7QZud9GaMYPUPPJD4zfw" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@aknanchannel" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+                    <li><a href="#" onclick="showPage('content')">المحتوى</a></li>
+                    <li><a href="#" onclick="showPage('join')">انضم إلينا</a></li>
+                    <li><a href="#" onclick="showPage('contact')">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>المحتوى</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('content')">الفيديوهات</a></li>
+                    <li><a href="#" onclick="showPage('content')">البودكاست</a></li>
+                    <li><a href="#" onclick="showPage('content')">المقالات</a></li>
+                    <li><a href="#" onclick="showPage('content')">سؤال وجواب</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>تواصل معنا</h4>
+                <p><i class="fas fa-envelope"></i> aknanchannel@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 أكنان. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

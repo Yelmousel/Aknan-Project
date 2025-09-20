@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>انضم إلينا - أكنان</title>
+    <meta name="description" content="كن جزءاً من مجتمعنا المتنامي - أكنان" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <div class="loader-container">
+            <div class="spinner"></div>
+        </div>
+
+    <div class="background-sphere sphere-1"></div>
+    <div class="background-sphere sphere-2"></div>
+    <div class="background-sphere sphere-3"></div>
+    <div class="background-sphere sphere-4"></div>
+
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <img src="assets/aknan_icon only.png" alt="Aknan Logo" />
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+                <li><a href="#" onclick="showPage('content')">المحتوى</a></li>
+                <li><a href="#" onclick="showPage('join')">انضم إلينا</a></li>
+                <li><a href="#" onclick="showPage('contact')">تواصل معنا</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">انضم إلينا</h2>                
+
+                <div class="join-options">
+                    <div class="join-card">
+                        <div class="join-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>التطوع</h3>
+                        <ul style="text-align: right; margin: 1rem 0;">
+                            <li>المساعدة في البحث والإعداد</li>
+                            <li>الترجمة والـ subtitles</li>
+                            <li>إدارة التعليقات والمتابعة</li>
+                            <li>المساعدة في التنظيم</li>
+                        </ul>
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> اكتب "تطوع" في الموضوع
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>الوظائف والعمل </h3>
+                        <ul style="text-align: right; margin: 1rem 0;">
+                            <li>منتج/مونتير</li>
+                            <li>كاتب محتوى</li>
+                            <li>مصور/مصمم</li>
+                            <li>مدير سوشيال ميديا</li>
+                        </ul>
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> اكتب "وظيفة" في الموضوع
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon"><i class="fas fa-microphone"></i></div>
+                        <h3>الخبراء والضيوف </h3>
+                        <ul style="text-align: right; margin: 1rem 0;">
+                            <li>ضيوف للحلقات</li>
+                            <li>خبراء في المجال</li>
+                            <li>المؤثرين للتعاون</li>
+                            <li>أصحاب التجارب المميزة</li>
+                        </ul>
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> اكتب "ضيف/خبير" في الموضوع
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>الشراكات والرعاية </h3>
+                        <ul style="text-align: right; margin: 1rem 0;">
+                            <li>الشركات للرعاية</li>
+                            <li>العلامات التجارية</li>
+                            <li>القنوات للتبادل</li>
+                            <li>المؤسسات للشراكة</li>
+                        </ul>
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> اكتب "شراكة" في الموضوع
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>الأفكار والمقترحات </h3>
+                        <ul style="text-align: right; margin: 1rem 0;">
+                            <li>أفكار للحلقات</li>
+                            <li>اقتراحات للتطوير</li>
+                            <li>ملاحظات على المحتوى</li>
+                            <li>أفكار إبداعية جديدة</li>
+                        </ul>
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> اكتب "فكرة" في الموضوع
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="join-icon"><i class="fas fa-comments"></i></div>
+                        <h3>مجموعات النقاش</h3>
+                        <p>انضم لمجموعاتنا على تيليجرام وديسكورد للمناقشات اليومية</p>
+                        <div class="social-join">
+                            <a href="https://t.me/aknanchannel" target="_blank" class="btn btn-secondary"><i class="fab fa-telegram"></i> تيليجرام</a>
+                            <a href="https://discord.gg/yourdiscordlink" target="_blank" class="btn btn-secondary"><i class="fab fa-discord"></i> ديسكورد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-column">
+                <h4>أكنان</h4>
+                <p>مساحتك للهدوء والتأمل والتغيير. منصة تقدم التعاليم الإسلامية بطريقة متوازنة وعصرية للشباب.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61577148073445" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aknanchannel/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCfK7QZud9GaMYPUPPJD4zfw" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@aknanchannel" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+                    <li><a href="#" onclick="showPage('content')">المحتوى</a></li>
+                    <li><a href="#" onclick="showPage('join')">انضم إلينا</a></li>
+                    <li><a href="#" onclick="showPage('contact')">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>المحتوى</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('content')">الفيديوهات</a></li>
+                    <li><a href="#" onclick="showPage('content')">البودكاست</a></li>
+                    <li><a href="#" onclick="showPage('content')">المقالات</a></li>
+                    <li><a href="#" onclick="showPage('content')">سؤال وجواب</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>تواصل معنا</h4>
+                <p><i class="fas fa-envelope"></i> aknanchannel@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 أكنان. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تواصل معنا - أكنان</title>
+    <meta name="description" content="نحن هنا للإجابة على استفساراتك ومساعدتك - أكنان" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+        <div class="loader-container">
+            <div class="spinner"></div>
+        </div>
+
+    
+    <div class="background-sphere sphere-1"></div>
+    <div class="background-sphere sphere-2"></div>
+    <div class="background-sphere sphere-3"></div>
+    <div class="background-sphere sphere-4"></div>
+
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <img src="assets/aknan_icon only.png" alt="Aknan Logo" />
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+                <li><a href="#" onclick="showPage('content')">المحتوى</a></li>
+                <li><a href="#" onclick="showPage('join')">انضم إلينا</a></li>
+                <li><a href="#" onclick="showPage('contact')">تواصل معنا</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">نحن هنا للإجابة على استفساراتك ومساعدتك</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>aknanchannel@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Fromspree -->
+                    <form 
+                        class="contact-form" 
+                        id="contactForm"
+                        action="https://formspree.io/f/mdklqyng"  
+                        method="POST"
+                    >
+                        <div class="form-group"> 
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <input type="text" id="subject" name="subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="sendBtn">إرسال الرسالة</button>
+                    </form>
+
+                    <div id="formMessage">
+                        <i id="formMessageIcon" class=""></i>
+                        <span id="formMessageText"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-column">
+                <h4>أكنان</h4>
+                <p>مساحتك للهدوء والتأمل والتغيير. منصة تقدم التعاليم الإسلامية بطريقة متوازنة وعصرية للشباب.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61577148073445" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aknanchannel/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCfK7QZud9GaMYPUPPJD4zfw" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@aknanchannel" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
+                    <li><a href="#" onclick="showPage('content')">المحتوى</a></li>
+                    <li><a href="#" onclick="showPage('join')">انضم إلينا</a></li>
+                    <li><a href="#" onclick="showPage('contact')">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>المحتوى</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('content')">الفيديوهات</a></li>
+                    <li><a href="#" onclick="showPage('content')">البودكاست</a></li>
+                    <li><a href="#" onclick="showPage('content')">المقالات</a></li>
+                    <li><a href="#" onclick="showPage('content')">سؤال وجواب</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>تواصل معنا</h4>
+                <p><i class="fas fa-envelope"></i> aknanchannel@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 أكنان. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
